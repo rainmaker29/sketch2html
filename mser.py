@@ -26,7 +26,7 @@ def mser(roi_img):
     viss = cv2.dilate(viss, e, iterations=3)
     #cv2.imwrite("html/" + 'view3.jpg', viss)
 
-    viss, contours, hierarchy = cv2.findContours(viss, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(viss, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     viss = cv2.drawContours(viss, contours, -1, (255, 255, 255), 2)
     #print (contours)
     areaSize=[]
