@@ -11,8 +11,12 @@ from keras import backend as K
 from keras.layers import Input
 from keras.models import Model
 from keras_frcnn import roi_helpers
-
+from keras import backend as K
 def operation():
+
+    #After prediction
+    K.clear_session()
+
     sys.setrecursionlimit(40000)
 
     parser = OptionParser()
@@ -256,7 +260,8 @@ def operation():
     # cv2.waitKey(0)
         cv2.imwrite('./results_imgs/{}.png'.format(idx),img)
     print("=======================")
-
+    
     return object
+
 if __name__=='__main__':
     a= operation()
