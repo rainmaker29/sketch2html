@@ -1,0 +1,21 @@
+#div0{
+	width : 100.0%;
+	height : 100.0%;
+	margin : -1px;
+	border : 1px solid black;
+}
+#radioButton0{
+	margin : 10px;
+}
+#radioButton1{
+	margin : 10px;
+}
+#radioButton2{
+	margin : 10px;
+}
+#button0{
+	margin : 10px;
+	width : 200px;
+	height : 125px;
+	background-color : none;
+}
